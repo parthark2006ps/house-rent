@@ -19,7 +19,7 @@ export default function Navbar() {
       await switchDemoRole(role);
       showToast(`Switched active role to ${role.toUpperCase()}`, 'info');
     } catch (err) {
-      showToast('Error switching demo role', 'error');
+      showToast(err.response?.data?.message || 'Error switching demo role', 'error');
     }
   };
 

@@ -100,6 +100,31 @@ const loginUser = async (req, res) => {
     }
 
     if (!foundUser) {
+      // Auto-upsert demo users if missing in DB
+      const isDemoUser = ['admin@househunt.tn', 'owner@househunt.tn', 'user@househunt.tn'].includes(email.toLowerCase());
+      if (isDemoUser && getMongoStatus()) {
+        const demoSeed = initialUsers.find(u => u.email.toLowerCase() === email.toLowerCase());
+        if (demoSeed) {
+          const salt = await bcrypt.genSalt(10);
+          let rawPass = 'user123';
+          if (demoSeed.role === 'admin') rawPass = 'admin123';
+          if (demoSeed.role === 'owner') rawPass = 'owner123';
+          const hashedPassword = await bcrypt.hash(rawPass, salt);
+
+          foundUser = await User.create({
+            _id: demoSeed._id,
+            name: demoSeed.name,
+            email: demoSeed.email.toLowerCase(),
+            password: hashedPassword,
+            role: demoSeed.role,
+            phone: demoSeed.phone,
+            city: demoSeed.city
+          });
+        }
+      }
+    }
+
+    if (!foundUser) {
       return res.status(401).json({ message: 'Invalid credentials. User not found.' });
     }
 

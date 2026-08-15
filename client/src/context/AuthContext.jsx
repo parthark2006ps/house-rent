@@ -50,15 +50,21 @@ export const AuthProvider = ({ children }) => {
 
   // Demo Switch helper for fast testing
   const switchDemoRole = async (roleName) => {
+    const normalizedRole = roleName ? roleName.toString().toLowerCase() : 'user';
     let email = 'user@househunt.tn';
     let password = 'user123';
-    if (roleName === 'owner') {
+
+    if (normalizedRole === 'owner' || normalizedRole === 'landlord') {
       email = 'owner@househunt.tn';
       password = 'owner123';
-    } else if (roleName === 'admin') {
+    } else if (normalizedRole === 'admin') {
       email = 'admin@househunt.tn';
       password = 'admin123';
+    } else if (normalizedRole === 'user' || normalizedRole === 'renter' || normalizedRole === 'tenant') {
+      email = 'user@househunt.tn';
+      password = 'user123';
     }
+
     return login(email, password);
   };
 

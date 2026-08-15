@@ -43,7 +43,7 @@ export default function AuthModal() {
       showToast(`Quick Logged in as Demo ${roleName.toUpperCase()}`, 'success');
       setIsAuthModalOpen(false);
     } catch (err) {
-      showToast('Demo login error', 'error');
+      showToast(err.response?.data?.message || 'Demo login error', 'error');
     }
   };
 
