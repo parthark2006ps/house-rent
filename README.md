@@ -90,7 +90,7 @@ house-rent/
 3. **Environment Setup**
    Create a `.env` file in the `server` directory with your configuration:
    ```env
-   PORT=5000
+   PORT=5001
    MONGO_URI=mongodb://localhost:27017/househunt
    JWT_SECRET=your_jwt_secret_key_here
    ```
