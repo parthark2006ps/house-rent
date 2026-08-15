@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: house-rent-server
+    env: node
+    region: singapore
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        value: mongodb+srv://parthark2006_db_user:Partha12345@cluster0.wqdpywj.mongodb.net/house_rent_db
+      - key: JWT_SECRET
+        value: househunt_super_secret_jwt_key_tamilnadu_2026
