@@ -1,61 +1,106 @@
 # 🏠 HouseHunt - House Rent Management System
 
-A modern, full-stack rental property management and booking platform built with **React**, **Node.js**, **Express**, and **MongoDB**.
+> A modern, full-stack rental property management and booking platform built with **MongoDB**, **Express.js**, **React**, and **Node.js** (MERN Stack).
+
+[![Stack](https://img.shields.io/badge/Stack-MERN-blue.svg)](https://github.com/parthark2006ps/house-rent)
+[![Frontend](https://img.shields.io/badge/Frontend-React%20%7C%20Vite-61DAFB.svg)](client/)
+[![Backend](https://img.shields.io/badge/Backend-Node.js%20%7C%20Express-339933.svg)](server/)
+[![Database](https://img.shields.io/badge/Database-MongoDB-47A248.svg)](https://www.mongodb.com/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
-## ✨ Features
+## 📂 Google Drive Project Documentation & Deliverables
 
-- 🔍 **Property Search & Filtering**: Browse rental properties by city, price range, and amenities.
-- 🏡 **Property Details & Virtual Tour**: View comprehensive house details, photo galleries, and interactive virtual tour previews.
-- 🔑 **User Authentication**: Secure user registration and login powered by JSON Web Tokens (JWT) and bcrypt password hashing.
-- ➕ **Post Properties**: Landlords/owners can easily list new properties with location, price, images, and feature highlights.
-- 📅 **Property Booking**: Tenants can schedule bookings and viewings directly through the platform.
-- 📊 **User & Owner Dashboard**: Manage active listings, view booking requests, and track rental status.
-- 📱 **Responsive UI**: Sleek, intuitive interface built with React, Vite, and custom modern styling.
+All phase-wise project design documents, requirements, user stories, software architecture, and testing reports are available in the official **Google Drive Repository**:
+
+📌 **Main Documentation Vault**: [MERN Phase Wise (Google Drive Folder)](https://drive.google.com/drive/folders/1qkPbjbTbTsi1rLMlG9i28hPUx0nTBNDI?usp=drive_link)
+
+### 📋 Phase-Wise Deliverables Index
+
+| Phase | Category | Deliverable Document | Google Drive Link |
+| :--- | :--- | :--- | :--- |
+| **Phase 1** | **Brainstorming & Ideation** | 🧠 Brainstorming & Idea Prioritization | [View Document](https://docs.google.com/document/d/1CtFHJZSpCJlj824kBc3uqgT915Y2fW72/edit?usp=drivesdk) |
+| **Phase 1** | **Brainstorming & Ideation** | ❓ Define Problem Statements | [View Document](https://docs.google.com/document/d/1vSLNTr6zGA6sVQ_NL0xnFrHez1SoojzE/edit?usp=drivesdk) |
+| **Phase 1** | **Brainstorming & Ideation** | 🗺️ Empathy Map Canvas | [View Document](https://docs.google.com/document/d/1zlrWWXDU6HtqC9vwrnU-N6axjNaPimHa/edit?usp=drivesdk) |
+| **Phase 2** | **Requirement Analysis** | 📊 Data Flow Diagrams & User Stories | [View Document](https://docs.google.com/document/d/1WyTWFs7Un6nyJpn0F0ZnAccFo0uxIYKn/edit?usp=drivesdk) |
+| **Phase 2** | **Requirement Analysis** | 📜 Solution Requirements (FR & NFR) | [View Document](https://docs.google.com/document/d/1vXl-KOc6VjtUOkRw0X2ZQgLgnffarwGu/edit?usp=drivesdk) |
+| **Phase 2** | **Requirement Analysis** | 💻 Technology Stack & Architecture | [View Document](https://docs.google.com/document/d/1ZF8Lnx2xx6hEct22S0DYZgp21NXGdCQk/edit?usp=drivesdk) |
+| **Phase 3** | **Project Planning** | 📅 Project Planning & Backlog Sprints | [View Document](https://docs.google.com/document/d/1e8_BugbXq8e9SX9g044K1QzAq382KYWG/edit?usp=drivesdk) |
+| **Phase 4** | **Project Design** | 📘 Master Project Documentation (HOUSE RENT) | [View Document](https://docs.google.com/document/d/1U9nwq9Q0V13K58Qkp_pON1WEWCd9Ok50/edit?usp=drivesdk) |
+| **Phase 4** | **Project Design** | 🎯 Problem–Solution Fit | [View Document](https://docs.google.com/document/d/1IZ5UKrOAJwHEnXMuCLVWDOL-Cpmd1cBw/edit?usp=drivesdk) |
+| **Phase 4** | **Project Design** | 💡 Proposed Solution Specification | [View Document](https://docs.google.com/document/d/10GGxA8jmtJ-EcX0hMb23H93aN62k3ShI/edit?usp=drivesdk) |
+| **Phase 4** | **Project Design** | 🏗️ Solution Architecture Blueprint | [View Document](https://docs.google.com/document/d/1rL2faoR5MOUr4cETAXCDotwWfFrPAhx8/edit?usp=drivesdk) |
+| **Phase 5** | **Development & Testing** | 🧪 User Acceptance Testing (UAT) Report | [View Document](https://docs.google.com/document/d/1bpX37A5sSkx1mlWy7QVF9Vr7BDvnK_HW/edit?usp=drivesdk) |
 
 ---
 
-## 🛠️ Tech Stack
+## 🎯 Problem Statement & Proposed Solution
+
+### The Challenge
+Traditional house hunting relies heavily on unverified brokers, manual site visits, hidden commission costs, and cumbersome physical paperwork. Both tenants and property owners face delays, lack of transparency, and inefficient booking tracking.
+
+### The Solution
+**HouseHunt** provides a streamlined web ecosystem:
+- **Verified Listings**: Direct property listings posted by property owners without middleman markup.
+- **Digital Applications & Booking**: Tenants browse properties, filter by budget/location/amenities, and schedule property viewings or submit lease requests digitally.
+- **Unified Dashboards**: Real-time status monitoring for both tenants (active applications/bookings) and owners (listing management & request approvals).
+
+---
+
+## ✨ Key Features
+
+- 🔍 **Advanced Property Search & Filter**: Search by city, rental budget range, property type, and available amenities.
+- 🏡 **Comprehensive Property Details**: Detailed view featuring photo galleries, location highlights, and amenity specifications.
+- 🔑 **Secure Authentication**: User sign-up and sign-in powered by JSON Web Tokens (JWT) and `bcrypt` password hashing.
+- ➕ **Property Posting**: Owners can seamlessly add new property listings with location, pricing, image URLs, and property highlights.
+- 📅 **Direct Booking & Viewing Requests**: Tenants can submit rental requests and view booking status in real-time.
+- 📊 **Owner & Tenant Dashboards**: Easily track posted listings, review incoming rental applications, and manage user profiles.
+- 📱 **Responsive UI**: Intuitive modern layout engineered with React 18, Vite, and custom CSS styling.
+
+---
+
+## 🛠️ Technology Stack
 
 ### Frontend
-- **Framework**: React 18 (with Vite)
+- **Framework**: React 18 (with Vite dev server)
 - **Routing**: React Router DOM v6
 - **HTTP Client**: Axios
 - **Icons**: Lucide React
+- **Styling**: Modern Vanilla CSS Design System
 
 ### Backend
 - **Runtime**: Node.js
 - **Framework**: Express.js
 - **Database**: MongoDB (via Mongoose ORM)
-- **Authentication**: JWT (jsonwebtoken) & bcryptjs
-- **Security & CORS**: CORS, dotenv environment handling
+- **Authentication**: JSON Web Tokens (JWT) & `bcryptjs`
+- **Configuration & Security**: CORS, `dotenv`
 
 ---
 
-## 📁 Project Structure
+## 🏗️ System Architecture & Folder Structure
 
 ```
 house-rent/
-├── client/              # React + Vite Frontend
+├── client/              # Frontend Application (React + Vite)
 │   ├── src/
-│   │   ├── components/  # React Components (Modals, Cards, Navbar, etc.)
-│   │   ├── context/     # React Context for State Management
-│   │   ├── services/    # API Service layer (Axios)
+│   │   ├── components/  # Modals, Navbar, Cards, Forms
+│   │   ├── context/     # Global Context (Auth Context)
+│   │   ├── services/    # API Service Layer (Axios client)
 │   │   └── App.jsx
 │   ├── package.json
 │   └── vite.config.js
 │
-├── server/              # Node.js + Express Backend
-│   ├── config/          # Database configuration (MongoDB connection)
-│   ├── controllers/     # Route handler controllers
-│   ├── models/          # Mongoose Schemas (User, Property, Booking)
+├── server/              # Backend API Server (Express + MongoDB)
+│   ├── config/          # MongoDB Connection setup
+│   ├── controllers/     # Controller handlers (Auth, Property, Booking)
+│   ├── models/          # Data Schemas (User, Property, Booking)
 │   ├── routes/          # API Route endpoints
-│   ├── server.js        # Express app entry point
+│   ├── server.js        # Express application entry point
 │   └── package.json
 │
-├── package.json         # Root package.json (Concurrent scripts)
-└── README.md
+├── package.json         # Root scripts (Concurrent client & server execution)
+└── README.md            # Project README & Google Drive Deliverables Index
 ```
 
 ---
@@ -63,20 +108,20 @@ house-rent/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [Node.js](https://nodejs.org/) (v16+ recommended)
 - [MongoDB](https://www.mongodb.com/) (Local instance or MongoDB Atlas cluster)
 
-### Installation
+### Installation & Setup
 
-1. **Clone the repository**
+1. **Clone the Repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/parthark2006ps/house-rent.git
    cd house-rent
    ```
 
-2. **Install Root & Sub-directory Dependencies**
+2. **Install Dependencies**
    ```bash
-   # Install root dependencies (concurrently)
+   # Install root dependencies
    npm install
 
    # Install server dependencies
@@ -87,35 +132,40 @@ house-rent/
    cd ..
    ```
 
-3. **Environment Setup**
-   Create a `.env` file in the `server` directory with your configuration:
+3. **Configure Environment Variables**
+   Create a `.env` file inside the `server/` directory:
    ```env
    PORT=5001
    MONGO_URI=mongodb://localhost:27017/househunt
    JWT_SECRET=your_jwt_secret_key_here
    ```
 
-4. **Run the Application**
-   From the root directory, run both the backend server and frontend client concurrently:
+4. **Run Application**
+   Launch both backend and frontend concurrently from the root folder:
    ```bash
    npm run dev
    ```
-
-   - Frontend running at: `http://localhost:5173`
-   - Backend running at: `http://localhost:5000`
+   - **Frontend App**: `http://localhost:5173`
+   - **Backend API**: `http://localhost:5000`
 
 ---
 
 ## 📜 Available Scripts
 
-In the root directory, you can run:
+- `npm run dev`: Concurrently starts both backend and frontend servers.
+- `npm run dev:server`: Starts backend server only (`server/server.js`).
+- `npm run dev:client`: Starts frontend Vite dev server only.
 
-- `npm run dev`: Starts both backend server and frontend client simultaneously.
-- `npm run dev:server`: Starts only the backend Express server.
-- `npm run dev:client`: Starts only the frontend Vite development server.
+---
+
+## 👤 Developer & Project Information
+
+- **Developer**: Partha Sarathi R K
+- **Project**: House Rent (House Rental Management System)
+- **Documentation Vault**: [MERN Phase Wise Folder on Google Drive](https://drive.google.com/drive/folders/1qkPbjbTbTsi1rLMlG9i28hPUx0nTBNDI?usp=drive_link)
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open-source software licensed under the [MIT License](LICENSE).
